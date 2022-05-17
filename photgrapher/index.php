@@ -94,21 +94,24 @@
         <div class="py-4">
             <h2 class="text-center">
                 <span class="cat">Nature</span>
-                <button class="btn  shadow p-1 m-1 bg-white rounded" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                <button class="btn  shadow p-1 m-1 bg-white rounded" data-toggle="modal" data-target="#exampleModal" data-whatever="nature">
                     <i class="fas fa-plus-circle " style='font-size:25px'></i>
                 </button>
             </h2>
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-12">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <img src="images/nat2.jpg" class="img-fluid pb-3" alt="">
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <img src="images/nat3.jpg" class="img-fluid pb-3" alt="">
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <img src="images/nat4.jpg" class="img-fluid pb-3" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <img src="images/nat5.jpg" class="img-fluid pb-3" alt="">
                 </div>
             </div>
         </div>
@@ -118,21 +121,24 @@
         <div class="py-4">
             <h2 class="text-center">
                 <span class="cat">Architecture</span>
-                <a type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
-                    <i class="fas fa-plus-circle shadow p-1 mb-2 bg-white rounded" style='font-size:20px'></i>
-                </a>
+                <button class="btn  shadow p-1 m-1 bg-white rounded" data-toggle="modal" data-target="#exampleModal" data-whatever="architecture">
+                    <i class="fas fa-plus-circle " style='font-size:25px'></i>
+                </button>
             </h2>
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-12">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <img src="images/archi2.jpg" class="img-fluid pb-3" alt="">
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <img src="images/archi3.jpg" class="img-fluid pb-3" alt="">
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <img src="images/archi4.jpg" class="img-fluid pb-3" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <img src="images/archi5.jpg" class="img-fluid pb-3" alt="">
                 </div>
             </div>
         </div>
@@ -142,21 +148,24 @@
         <div class="py-4">
             <h2 class="text-center">
                 <span class="cat">Travel</span>&nbsp;
-                <a type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
-                    <i class="fas fa-plus-circle shadow p-1 mb-2 bg-white rounded" style='font-size:20px'></i>
-                </a>
+                <button class="btn  shadow p-1 m-1 bg-white rounded" data-toggle="modal" data-target="#exampleModal" data-whatever="travel">
+                    <i class="fas fa-plus-circle " style='font-size:25px'></i>
+                </button>
             </h2>
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-12">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <img src="images/trav5.jpg" class="img-fluid pb-3" alt="">
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <img src="images/trav3.jpg" class="img-fluid pb-3" alt="">
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <img src="images/trav4.jpg" class="img-fluid pb-3" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <img src="images/trav2.jpg" class="img-fluid pb-3" alt="">
                 </div>
             </div>
         </div>
@@ -167,28 +176,37 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                    <input type="text" class="form-control" id="recipient-name">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New Picture</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="form-group">
-                    <label for="message-text" class="col-form-label">Message:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
+                <div class="modal-body">
+                    <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Image:</label>
+                        <div class="input-group mb-3">
+                            <!-- <div class="input-group-prepend">
+                                <span class="input-group-text">Upload</span>
+                            </div> -->
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                <label class="custom-file-label" for="inputGroupFile01">Choose a file</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Category:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    
+                    <button type="button" class="btn btn-success">Submit</button>
+                    </form>
                 </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Send message</button>
-            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
