@@ -1,15 +1,9 @@
 <?php
+    require 'connection.php';
+
     session_start();
-    $con = mysqli_connect('localhost', 'root');
 
-    if ($con) {
-        echo "Connection Successful";
-    }
-    else {
-        echo "Connection Failed";
-    }
-
-    mysqli_select_db($con, 'photography');
+    //Contact form action start
 
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -27,6 +21,7 @@
     else {
         echo "Something went wrong";
     }
-    
-    
+    //Contact form action end
+
+
 ?>

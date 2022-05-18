@@ -63,17 +63,17 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="images/archi1.jpg" class="d-block w-100" alt="architecture">
+            <img src="uploads/archi1.jpg" class="d-block w-100" alt="architecture">
             <div class="carousel-caption d-none d-md-block">
                 <h3>Architecture</h3>      </div>
             </div>
             <div class="carousel-item">
-            <img src="images/nat1.jpg" class="d-block w-100" alt="nature">
+            <img src="uploads/nat1.jpg" class="d-block w-100" alt="nature">
             <div class="carousel-caption d-none d-md-block">
                 <h3>Nature</h3>      </div>
             </div>
             <div class="carousel-item">
-            <img src="images/trav1.jpg" class="d-block w-100" alt="travel">
+            <img src="uploads/trav1.jpg" class="d-block w-100" alt="travel">
             <div class="carousel-caption d-none d-md-block">
                 <h3>Travel</h3>      </div>
             </div>
@@ -94,24 +94,24 @@
         <div class="py-4">
             <h2 class="text-center">
                 <span class="cat">Nature</span>
-                <button class="btn  shadow p-1 m-1 bg-white rounded" data-toggle="modal" data-target="#exampleModal" data-whatever="nature">
+                <button class="btn  shadow p-1 m-1 bg-white rounded" data-toggle="modal" data-target="#pictureModal">
                     <i class="fas fa-plus-circle " style='font-size:25px'></i>
                 </button>
             </h2>
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <img src="images/nat2.jpg" class="img-fluid pb-3" alt="">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 rounded">
+                    <img src="uploads/nat2.jpg" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <img src="images/nat3.jpg" class="img-fluid pb-3" alt="">
+                    <img src="uploads/nat3.jpg" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <img src="images/nat4.jpg" class="img-fluid pb-3" alt="">
+                    <img src="uploads/nat4.jpg" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <img src="images/nat5.jpg" class="img-fluid pb-3" alt="">
+                    <img src="uploads/nat5.jpg" class="img-fluid rounded" alt="">
                 </div>
             </div>
         </div>
@@ -121,7 +121,7 @@
         <div class="py-4">
             <h2 class="text-center">
                 <span class="cat">Architecture</span>
-                <button class="btn  shadow p-1 m-1 bg-white rounded" data-toggle="modal" data-target="#exampleModal" data-whatever="architecture">
+                <button class="btn  shadow p-1 m-1 bg-white rounded" data-toggle="modal" data-target="#pictureModal">
                     <i class="fas fa-plus-circle " style='font-size:25px'></i>
                 </button>
             </h2>
@@ -129,16 +129,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <img src="images/archi2.jpg" class="img-fluid pb-3" alt="">
+                    <img src="uploads/archi2.jpg" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <img src="images/archi3.jpg" class="img-fluid pb-3" alt="">
+                    <img src="uploads/archi3.jpg" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <img src="images/archi4.jpg" class="img-fluid pb-3" alt="">
+                    <img src="uploads/archi4.jpg" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <img src="images/archi5.jpg" class="img-fluid pb-3" alt="">
+                    <img src="uploads/archi5.jpg" class="img-fluid rounded" alt="">
                 </div>
             </div>
         </div>
@@ -148,7 +148,7 @@
         <div class="py-4">
             <h2 class="text-center">
                 <span class="cat">Travel</span>&nbsp;
-                <button class="btn  shadow p-1 m-1 bg-white rounded" data-toggle="modal" data-target="#exampleModal" data-whatever="travel">
+                <button class="btn  shadow p-1 m-1 bg-white rounded" data-toggle="modal" data-target="#pictureModal">
                     <i class="fas fa-plus-circle " style='font-size:25px'></i>
                 </button>
             </h2>
@@ -156,16 +156,19 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <img src="images/trav5.jpg" class="img-fluid pb-3" alt="">
+                    <img src="uploads/trav5.jpg" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <img src="images/trav3.jpg" class="img-fluid pb-3" alt="">
+                    <img src="uploads/trav3.jpg" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <img src="images/trav4.jpg" class="img-fluid pb-3" alt="">
+                    <img src="uploads/trav4.jpg" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <img src="images/trav2.jpg" class="img-fluid pb-3" alt="">
+                    <img src="uploads/trav2.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <img src=”source.php?id=1” class="img-fluid rounded" alt="">
                 </div>
             </div>
         </div>
@@ -173,7 +176,7 @@
     <!--Categories section end-->
 
     <!--Modal section start-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="pictureModal" tabindex="-1" aria-labelledby="pictureModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -183,25 +186,25 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form action="uploadFile.php" method="post" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Image:</label>
+                        <label for="file" class="col-form-label">Image:</label>
                         <div class="input-group mb-3">
                             <!-- <div class="input-group-prepend">
                                 <span class="input-group-text">Upload</span>
                             </div> -->
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="inputGroupFile01">
-                                <label class="custom-file-label" for="inputGroupFile01">Choose a file</label>
+                                <input type="file" name="file" class="custom-file-input" id="file">
+                                <label class="custom-file-label" for="file">Choose a file</label>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Category:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                    </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="category" class="col-form-label">Category:</label>
+                            <input type="text" class="form-control" id="category" name="category">
+                        </div>
                     
-                    <button type="button" class="btn btn-success">Submit</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -233,7 +236,7 @@
                     unset($_SESSION['status']);
                 }
             ?>
-            <form action="about.php" method="post">
+            <form action="contact.php" method="post">
                 <div class="form-group">
                     <label for="name">Name*:</label>
                     <input type="text" name="name" class="form-control" required>
@@ -275,7 +278,7 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-    <script src="js/scripts.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
