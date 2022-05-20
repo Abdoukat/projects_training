@@ -1,6 +1,8 @@
 <?php
     session_start();
+    require "connection.php";
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,17 +65,39 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="uploads/archi1.jpg" class="d-block w-100" alt="architecture">
+            <?php
+                
+
+                $query = "SELECT image FROM pictures WHERE category=\"architecture\" ORDER BY image DESC";
+                $pictures = mysqli_query($con, $query);
+                $data = $pictures->fetch_assoc();
+                echo '<img src="uploads/'.implode($data).'" class="d-block w-100" alt="architecture">';
+            ?>
+            
             <div class="carousel-caption d-none d-md-block">
                 <h3>Architecture</h3>      </div>
             </div>
             <div class="carousel-item">
-            <img src="uploads/nat1.jpg" class="d-block w-100" alt="nature">
+            <?php
+                
+
+                $query = "SELECT image FROM pictures WHERE category=\"nature\" ORDER BY image DESC";
+                $pictures = mysqli_query($con, $query);
+                $data = $pictures->fetch_assoc();
+                echo '<img src="uploads/'.implode($data).'" class="d-block w-100" alt="nature">';
+            ?>
             <div class="carousel-caption d-none d-md-block">
                 <h3>Nature</h3>      </div>
             </div>
             <div class="carousel-item">
-            <img src="uploads/trav1.jpg" class="d-block w-100" alt="travel">
+            <?php
+                
+
+                $query = "SELECT image FROM pictures WHERE category=\"travel\" ORDER BY image DESC";
+                $pictures = mysqli_query($con, $query);
+                $data = $pictures->fetch_assoc();
+                echo '<img src="uploads/'.implode($data).'" class="d-block w-100" alt="travel">';
+            ?>
             <div class="carousel-caption d-none d-md-block">
                 <h3>Travel</h3>      </div>
             </div>
@@ -89,9 +113,11 @@
     </div>
     <!--Slide section end-->
 
+    
+
     <!--Categories section start-->
-    <section id="nature" class="my-4">
-        <div class="py-4">
+    <section id="nature" class="my-4 mx-4">
+        <div class="py-4 px-4">
             <h2 class="text-center">
                 <span class="cat">Nature</span>
                 <button class="btn  shadow p-1 m-1 bg-white rounded" data-toggle="modal" data-target="#pictureModal">
@@ -101,7 +127,7 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12 rounded">
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-12 rounded">
                     <img src="uploads/nat2.jpg" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
@@ -112,12 +138,27 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <img src="uploads/nat5.jpg" class="img-fluid rounded" alt="">
-                </div>
+                </div> -->
+                <?php
+                    
+
+                    $query = "SELECT * FROM pictures WHERE category=\"nature\"";
+                    $pictures = mysqli_query($con, $query);
+                    $data = $pictures->fetch_all();
+                    foreach ($data as $data => $value) {
+                        echo '
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-3">
+                                <img src="uploads/'.$value[1].'" class="img-fluid rounded" alt="'.$value[1].'">
+                            </div>
+                        ';
+                    }
+                    
+                ?>
             </div>
         </div>
     </section>
-
-    <section id="architecture" class="my-4">
+    
+    <section id="architecture" class="my-4 mx-4">
         <div class="py-4">
             <h2 class="text-center">
                 <span class="cat">Architecture</span>
@@ -128,7 +169,7 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <img src="uploads/archi2.jpg" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
@@ -139,12 +180,27 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <img src="uploads/archi5.jpg" class="img-fluid rounded" alt="">
-                </div>
+                </div> -->
+                <?php
+                    
+
+                    $query = "SELECT * FROM pictures WHERE category=\"architecture\"";
+                    $pictures = mysqli_query($con, $query);
+                    $data = $pictures->fetch_all();
+                    foreach ($data as $data => $value) {
+                        echo '
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-3">
+                                <img src="uploads/'.$value[1].'" class="img-fluid rounded" alt="'.$value[1].'">
+                            </div>
+                        ';
+                    }
+                    
+                ?>
             </div>
         </div>
     </section>
 
-    <section id="travel" class="my-4">
+    <section id="travel" class="my-4 mx-4">
         <div class="py-4">
             <h2 class="text-center">
                 <span class="cat">Travel</span>&nbsp;
@@ -155,7 +211,7 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                     <img src="uploads/trav5.jpg" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
@@ -168,8 +224,23 @@
                     <img src="uploads/trav2.jpg" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <img src=”source.php?id=1” class="img-fluid rounded" alt="">
-                </div>
+                    <img src="source.php?id=1" class="img-fluid rounded" alt="">
+                </div> -->
+                <?php
+                    
+
+                    $query = "SELECT * FROM pictures WHERE category=\"travel\"";
+                    $pictures = mysqli_query($con, $query);
+                    $data = $pictures->fetch_all();
+                    foreach ($data as $data => $value) {
+                        echo '
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-3">
+                                <img src="uploads/'.$value[1].'" class="img-fluid rounded" alt="'.$value[1].'">
+                            </div>
+                        ';
+                    }
+                    
+                ?>
             </div>
         </div>
     </section>
@@ -189,20 +260,22 @@
                     <form action="uploadFile.php" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="file" class="col-form-label">Image:</label>
-                        <div class="input-group mb-3">
-                            <!-- <div class="input-group-prepend">
-                                <span class="input-group-text">Upload</span>
-                            </div> -->
-                            <div class="custom-file">
-                                <input type="file" name="file" class="custom-file-input" id="file">
-                                <label class="custom-file-label" for="file">Choose a file</label>
-                            </div>
-                        </div>
-                        </div>
                         <div class="form-group">
-                            <label for="category" class="col-form-label">Category:</label>
-                            <input type="text" class="form-control" id="category" name="category">
+                            <input type="file" name="file" class="form-control-file" id="file" required>
+                            <div class="invalid-feedback">More example invalid feedback text</div>
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="category" class="col-form-label">Category:</label>
+                        <!-- <input type="text" class="form-control" id="category" name="category" value="travel"> -->
+                        <select class="custom-select custom-select-lg mb-3" name="category" id="category" required>
+                            <option value="" disabled selected>- Choose a category -</option>
+                            <option value="nature">Nature</option>
+                            <option value="architecture">Architecture</option>
+                            <option value="travel">Travel</option>
+                        </select>
+                        <div class="invalid-feedback">More example invalid feedback text</div>
+                    </div>
                     
                     <button type="submit" class="btn btn-success">Submit</button>
                     </form>
