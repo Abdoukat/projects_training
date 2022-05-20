@@ -12,10 +12,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
-        <link rel="stylesheet" href="css/style.css">
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
 <body>
     <!--Navbar section start-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -113,7 +114,7 @@
     </div>
     <!--Slide section end-->
 
-    
+    <button id="myBtn" title="Go to top" onclick="topFunction()">Top <i class="fa-solid fa-arrow-up"></i></button>
 
     <!--Categories section start-->
     <section id="nature" class="my-4 mx-4">
@@ -291,7 +292,7 @@
     <!--Contact section start-->
     <section id="contact" class="my-4">
         <div class="py-4">
-            <h2 class="text-center">Contact Us</h2>
+            <h2 class="cat text-center">Contact Us</h2>
         </div>
         
         <div class="w-50 m-auto">
@@ -335,7 +336,7 @@
     <!--About section start-->
     <section id="about" class="my-4">
         <div class="py-4">
-            <h2 class="text-center">About</h2>
+            <h2 class="cat text-center">About</h2>
         </div>
         <div class="container-fluid">
             <h3 class="text-center">Abdellah</h3><br>
@@ -345,15 +346,18 @@
         </div>
     </section>
     <!--About section end-->
+
+    
     
 
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-    <!-- <script src="js/scripts.js"></script> -->
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
